@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --color-dark: #101010;
+  --color-green: #8CD678;
+  --color-light: #909090;
+  --color-medium-dark: #404040;
+  --color-medium-light: #808080;
+  --color-orange: #E2A059;
+  --color-red: #D67171;
+  --color-white: #D3D3D3;
+  --font-content: 'Roboto Slab', serif;
+  --font-title: 'Sono', sans-serif;
+}
+
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--color-dark);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color-light);
+  border-radius: 20px;
+}
+
+body {
+  background-color: var(--color-medium-dark);
+  flex-direction: column;
+  height: 100vh;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:hover .red{
+  color: var(--color-red);
+}
+
+button:hover .orange{
+  color: var(--color-orange);
+}
+
+button:hover .green{
+  color: var(--color-green);
+}
+
+footer {
+  background-color: var(--color-medium-dark);
+  bottom: 0;
+  height: 50px;
+  position: fixed;
+  text-align: center;
+  width: 100vw;
+}
+
+footer span{
+  color: var(--color-dark);
+  font-family: var(--font-title);
+}
+
+header {
+  background-color: var(--color-dark);
+  height: 50px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100vw;
+}
+
+header h1 {
+  color: var(--color-medium-light);
+  font-family: var(--font-title);
+  font-weight: 400;
+}
+
+input[type="text"] {
+  background-color: var(--color-medium-light);
+  border-radius: 5px;
+  color: var(--color-white);
+  font-size: 1.2rem;
+  height: 50px;
+  padding: 15px;
+  width: 450px;
+}
+
+input[type="text"]:focus {
+  border: 3px solid var(--color-dark);
+  outline: none;
+}
+
+input[type="checkbox"] {
+  -moz-appearance: none;
+  -o-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--color-medium-dark);
+  border: 3px solid var(--color-dark);
+  height: 30px;
+  width: 30px;
+}
+
+input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background-color: var(--color-medium-light);
+  border: 3px solid var(--color-green);
+}
+
+input[type="checkbox"]:checked:hover {
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  width: 80%;
+}
+
+span a{
+  color: var(--color-medium-light);
+}
+
+table {
+  height: 100%;
+  padding-top: 50px;
+  width: 650px;
+}
+
+td {
+  align-items: center;
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  margin: 25px;
+  width: 100%;
+}
+
+td button {
+  background-color: var(--color-white);
+  border-radius: 5px;
+  height: 50px;
+  text-align: center;
+  width: 50px;
+}
+
+thead {
+  height: 50px;
+  text-align: left;
+  width: 100%;
+}
+
+thead th {
+  color: var(--color-white);
+  font-family: var(--font-title);
+}
+
+.display-flex-center{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.material-symbols-outlined{
+  color: var(--color-medium-dark);
+  font-size: 2rem;
+}
+
+#add{
+  height: 50px;
+  margin-top: 30px;
+  width: 50px;
+}
+
+#add-button{
+  border-radius: 100%;
+}
+
+#add:hover{
+  cursor: pointer;
+}
+
+#add-button:hover{
+  cursor: pointer;
+}
